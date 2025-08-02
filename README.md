@@ -4,16 +4,7 @@ A feature-rich, end-to-end e-commerce mobile application built with Flutter for 
 
 ---
 
-## 📸 App Showcase
 
-*(Crucial: Replace the placeholder links below with GIFs of your running app for a professional presentation.)*
-
-| Customer View                                                                                                                    | Admin Panel                                                                                                                      |
-| -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| ![User Flow GIF](https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif)                                                      | ![Admin Flow GIF](https://media.giphy.com/media/l41lI4bYmcsPJ5248/giphy.gif)                                                      |
-| *A seamless journey from browsing and searching to adding items to the cart and placing an order.*                               | *A complete management dashboard for viewing products, adding new inventory with live image uploads, and tracking customer orders.* |
-
----
 
 ## ✨ Key Features
 
@@ -102,6 +93,25 @@ flutter pub get
 # Run the app
 flutter run
 
+
+### **2. Frontend Client**
+```bash
+# 1. Navigate to the client directory
+cd client
+
+# 2. Install Flutter packages
+flutter pub get
+
+# 3. Configure the API URI
+# Open lib/constants/global_variables.dart and set the `uri` variable to your computer's local IP address.
+# Example: String uri = 'http://192.168.1.10:3001';
+
+# 4. Configure Cloudinary credentials
+# Open lib/features/admin/services/admin_service.dart and replace the placeholder values in the CloudinaryPublic() constructor with your Cloud Name and Upload Preset.
+# Example: final cloudinary = CloudinaryPublic('your-cloud-name', 'your-upload-preset');
+
+# 5. Run the app on an emulator or a physical device
+flutter run
 
 
 > This project demonstrates a comprehensive understanding of full-stack mobile development, integrating a robust backend with a polished, feature-rich Flutter frontend.
